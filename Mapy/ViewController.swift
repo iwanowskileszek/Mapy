@@ -12,6 +12,7 @@ import CoreLocation
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var Krakow: UIButton!
     
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         mapView.setRegion( region, animated: true)
         }
     
+    @IBAction func pokazPicker(sender:AnyObject){}
     
     override func viewDidLoad() {
         super.viewDidLoad()
